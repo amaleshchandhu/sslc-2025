@@ -3,28 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SSLC Result Portal</title>
-  <link rel="stylesheet" href="style.css">
+  <title>SSLC Result 2025</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #e6e6e6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border: 1px solid #ccc;
+    }
+    .header {
+      text-align: center;
+      border-bottom: 4px solid #337ab7;
+      padding-bottom: 10px;
+    }
+    .header img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      margin: 5px 0;
+      color: green;
+    }
+    .header h2 {
+      margin: 5px 0;
+      font-size: 18px;
+      color: #003366;
+    }
+    .nav {
+      background-color: #337ab7;
+      color: white;
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+    .form-section {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 20px 0;
+    }
+    .form-box {
+      flex: 1;
+      max-width: 400px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #ffffcc;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #337ab7;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .logo {
+      width: 250px;
+    }
+    .bottom-section {
+      text-align: center;
+      padding: 10px;
+    }
+    .bottom-section img {
+      margin: 10px;
+      height: 50px;
+    }
+    .footer {
+      font-size: 12px;
+      color: red;
+      padding-top: 10px;
+      border-top: 1px solid #ccc;
+    }
+    .rights {
+      font-size: 11px;
+      text-align: center;
+      color: #444;
+      margin-top: 15px;
+    }
+  </style>
 </head>
 <body>
+
   <div class="container">
-    <h2>SSLC Examination Results 2025</h2>
-    <form id="resultForm">
-      <label for="regno">Register Number:</label>
-      <input type="text" id="regno" required />
+    <div class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Government_of_Kerala_Logo.svg/1024px-Government_of_Kerala_Logo.svg.png" alt="Kerala Logo">
+      <h1>SSLC RESULT-2025</h1>
+      <h2>Board of Public Examinations</h2>
+    </div>
 
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" required />
+    <div class="nav">Home | Schoolwise Result</div>
 
-      <button type="submit">View Result</button>
-    </form>
+    <div class="form-section">
+      <div class="form-box">
+        <form>
+          <label for="regno">Register No.</label>
+          <input type="text" id="regno" name="regno" required>
+
+          <label for="dob">Date of Birth</label>
+          <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy" required>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <img src="https://kite.kerala.gov.in/wp-content/uploads/2021/12/kite-logo.png" alt="KITE Logo" class="logo">
+    </div>
+
+    <div class="bottom-section">
+      <img src="https://www.result.kite.kerala.gov.in/images/result_analysis_button.png" alt="Result Analysis">
+      <img src="https://www.result.kite.kerala.gov.in/images/sametham_button.png" alt="Sametham">
+    </div>
+
+    <div class="footer">
+      Disclaimer: Neither KITE nor Board of Public Examinations is responsible for any inadvertent error that may have crept in the results being published on net...
+    </div>
+
+    <div class="rights">
+      © All Rights Reserved. KITE, General Education Department, Govt of Kerala.
+    </div>
   </div>
 
-  <script>
-    document.getElementById('resultForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      window.location.href = 'prank.html';
-    });
-  </script>
 </body>
 </html>
+
+
